@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <HeadNavigation />
+    <!-- 占位 -->
+    <p class="placeHolder" style="height:60px;margin: 0;"></p>  
+    <!-- <AboutUs /> -->
+    <!-- <ContactUs/> -->
+    <!-- <ProductService/> -->
+    <router-view></router-view>
+    <!-- <IndexShow/> -->
+    <BottomShow/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeadNavigation from './components/HeadNavigation';
+// import AboutUs from './components/AboutUs';
+// import ContactUs from './components/ContactUs';
+// import ProductService from './components/ProductService'
+// import IndexShow from './components/IndexShow.vue';
+
+import BottomShow from './components/BottomShow';
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HeadNavigation,
+    // AboutUs,
+    // ContactUs,
+    // ProductService,
+    // IndexShow,
+    BottomShow
+  },
+  
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

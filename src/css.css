@@ -1,0 +1,6 @@
+/* 修改 Element Plus 默认字体大小为16px */
+button{
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+  }
+  
